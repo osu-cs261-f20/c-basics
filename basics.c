@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+struct student {
+
+};
+
 /*
  * A prototype for the function foo().
  */
@@ -11,6 +15,9 @@ int main(int argc, char** argv) {
   double pi = 3.1415;
   char a = 'a';
 
+  /*
+   * Equivalent to: `std::cout << "Hello world." << std::endl;`
+   */
   printf("Hello world.\n");
 
   /*
