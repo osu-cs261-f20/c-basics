@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 struct student {
-
+  char* name;
+  int id;
+  float gpa;
 };
 
 /*
@@ -14,6 +16,10 @@ int main(int argc, char** argv) {
   int i;
   double pi = 3.1415;
   char a = 'a';
+
+  struct student s = {.name = "Luke Skywalker", .gpa = 3.8};
+  s.id = 933111111;
+  printf("== name: %s\tid: %d\tgpa: %f\n", s.name, s.id, s.gpa);
 
   /*
    * Equivalent to: `std::cout << "Hello world." << std::endl;`
