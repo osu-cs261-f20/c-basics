@@ -33,6 +33,7 @@ void sort_two_things(void** two_things, int (*cmp)(void* a, void* b)) {
 int compare_ints(void* a, void* b) {
   int* ia = a;
   int* ib = b;
+  // if (*(int*)a <= *(int*)b) {
   if (*ia <= *ib) {
     return 0;
   } else {
